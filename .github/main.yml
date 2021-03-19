@@ -1,0 +1,30 @@
+name: Build , Test, and Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build , Test, and Deploy
+    runs-on: ubuntu-16.04
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@main
+
+      - name: Install Hosting Dependencies
+        run: npm install
+
+      # - name: Test Hosting
+      #   run: npm test
+
+      - name: Build Hosting Artifact
+        run: npm run build
+
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting -m $GITHUB_SHA
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
