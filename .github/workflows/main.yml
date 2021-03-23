@@ -16,8 +16,8 @@ jobs:
       - name: Install Hosting Dependencies
         run: npm install
 
-      # - name: Test Hosting
-      #   run: npm test
+      - name: Test Hosting
+        run: npm test
 
       - name: Build Hosting Artifact
         run: npm run build
