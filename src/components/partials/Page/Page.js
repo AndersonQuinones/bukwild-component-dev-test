@@ -1,12 +1,23 @@
 import React, { Component } from "react";
+import "./Page.css";
 
 class Page extends Component {
   render() {
     return (
-      <div>
-        <p>{this.props.headline}</p>
-        <p>{this.props.subhead}</p>
-        <p>{this.props.cta}</p>
+      <div className="Page row full-height">
+        <div className="PageContent col">
+          <div className="row">
+            <div className="PageHeadline col-6">
+              <p>{this.props.headline}</p>
+            </div>
+            <div className="PageSubhead col-6">
+              <p>{this.props.subhead}</p>
+            </div>
+          </div>
+        </div>
+        <div className="PageFooter">
+          <div>{this.props.cta}</div>
+        </div>
       </div>
     );
   }
