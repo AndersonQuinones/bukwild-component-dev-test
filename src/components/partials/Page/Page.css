@@ -1,0 +1,22 @@
+.Page {
+  background-color: red;
+}
+
+.PageContent {
+  /* Margin was used to center div vertically */
+  margin-top: 25%;
+}
+
+.PageHeadline {
+  background-color: lightcyan;
+}
+
+.PageSubhead {
+  background-color: darkslategrey;
+}
+
+.PageFooter {
+  background-color: lightgreen;
+  position: absolute;
+  bottom: 0px;
+}

@@ -1,0 +1,15 @@
+.Header {
+  background-color: rgb(109, 109, 3);
+  display: flex;
+  flex-direction: column;
+}
+
+.HeaderLogo {
+  max-width: 77px;
+  max-height: 39px;
+}
+
+.HeaderTopRow {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,8 @@
+{
+  "partials": {
+    "Header": {
+      "contactUsButtonText": "Contact Us",
+      "logoAltText": "abc Logo"
+    }
+  }
+}
