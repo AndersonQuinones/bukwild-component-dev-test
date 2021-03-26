@@ -1,5 +1,6 @@
 name: Build , Test, and Deploy
 
+# TODO - Run test on all branches and Pull Requests
 on:
   push:
     branches:
