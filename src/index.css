@@ -8,7 +8,6 @@ body,
 }
 
 body {
-  background-color: teal;
   padding-top: 1%;
 }
 
@@ -17,6 +16,7 @@ body {
 }
 
 .container {
+  height: 100%;
   width: 80%;
   padding-right: 15px;
   padding-left: 15px;

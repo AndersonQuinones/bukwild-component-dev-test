@@ -5,7 +5,7 @@ import Routes from "../Routes/Routes";
 
 export default function App() {
   return (
-    <div className="container full-height">
+    <div className="container">
       <Router>
         <Header />
         <Switch>

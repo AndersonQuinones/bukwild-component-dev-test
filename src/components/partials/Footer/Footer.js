@@ -3,6 +3,7 @@ import Strings from "../../../constants/Strings";
 import "./Footer.css";
 
 function handleCTAClick() {
+  // TODO - Implement click handler
   console.log("CTA Clicked!");
 }
 
