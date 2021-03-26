@@ -9,14 +9,9 @@ const activeLinkStyle = {
   color: "orange",
 };
 
-const linkStyle = {
-  paddingTop: "0.25%",
-  paddingBottom: "0.25%",
-};
-
 const ContactUsButton = () => {
   return (
-    <button className="ContactUsButton">
+    <button className="ContactUsButton text-button">
       {Strings.partials.Header.contactUsButtonText}
     </button>
   );
@@ -25,7 +20,7 @@ const ContactUsButton = () => {
 class Header extends Component {
   render() {
     return (
-      <div className="Header row">
+      <div className="Header">
         <div className="HeaderTopRow">
           <img
             className="HeaderLogo"
@@ -37,10 +32,10 @@ class Header extends Component {
         {Pages.map((page) => {
           return (
             <NavLink
+              className="HeaderNavLink text-body"
               to={page.path}
               key={page.path}
               activeStyle={activeLinkStyle}
-              style={linkStyle}
             >
               {page.title}
             </NavLink>
