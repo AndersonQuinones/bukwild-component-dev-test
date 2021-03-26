@@ -1,0 +1,26 @@
+.Footer {
+  background-color: white;
+  color: black;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.FooterItem {
+  padding: 10%;
+}
+
+.FooterButton {
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  user-select: none;
+}
+
+.FooterIcon {
+  padding: 2%;
+  color: #ffc001;
+}

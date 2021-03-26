@@ -1,22 +1,13 @@
 .Page {
-  background-color: red;
+  color: white;
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
 }
 
 .PageContent {
-  /* Margin was used to center div vertically */
-  margin-top: 25%;
-}
-
-.PageHeadline {
-  background-color: lightcyan;
-}
-
-.PageSubhead {
-  background-color: darkslategrey;
-}
-
-.PageFooter {
-  background-color: lightgreen;
-  position: absolute;
-  bottom: 0px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  width: 100%;
 }

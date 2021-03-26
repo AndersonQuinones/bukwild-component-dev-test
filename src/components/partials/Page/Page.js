@@ -1,26 +1,15 @@
 import React, { Component } from "react";
 import "./Page.css";
 
-class Page extends Component {
+export default class Page extends Component {
   render() {
     return (
-      <div className="Page row full-height">
-        <div className="PageContent col">
-          <div className="row">
-            <div className="PageHeadline col-6">
-              <p>{this.props.headline}</p>
-            </div>
-            <div className="PageSubhead col-6">
-              <p>{this.props.subhead}</p>
-            </div>
-          </div>
-        </div>
-        <div className="PageFooter">
-          <div>{this.props.cta}</div>
+      <div className="Page">
+        <div className="PageContent">
+          <div className="text-headline">{this.props.headline}</div>
+          <div className="text-subhead">{this.props.subhead}</div>
         </div>
       </div>
     );
   }
 }
-
-export default Page;

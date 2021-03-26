@@ -2,7 +2,9 @@
   "partials": {
     "Header": {
       "contactUsButtonText": "Contact Us",
-      "logoAltText": "abc Logo"
+      "logoAltText": "abc Logo",
+      "letsTalkButtonText": "Let's Talk",
+      "letsTalkButtonIcon": "→"
     }
   }
 }
