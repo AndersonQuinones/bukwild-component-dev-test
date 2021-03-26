@@ -6,7 +6,7 @@ export default content.pages.map((page) => {
   return {
     title: page.title,
     path: `/${page.slug}`,
-    type: block.type,
+    type: block.type, // NOTE - This value is currently not used
     headline: block.headline,
     subhead: block.subhead,
     cta: block.cta,

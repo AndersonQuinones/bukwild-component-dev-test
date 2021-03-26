@@ -10,13 +10,14 @@ const activeLinkStyle = {
 };
 
 function handleContactUsButtonClick() {
+  // TODO - Implement click handler
   console.log("Contact Us Button Clicked!");
 }
 
 const ContactUsButton = () => {
   return (
     <button
-      className="ContactUsButton text-button"
+      className="HeaderContactUsButton text-button"
       onClick={handleContactUsButtonClick}
     >
       {Strings.partials.Header.contactUsButtonText}
@@ -24,7 +25,7 @@ const ContactUsButton = () => {
   );
 };
 
-class Header extends Component {
+export default class Header extends Component {
   render() {
     return (
       <div className="Header">
@@ -52,5 +53,3 @@ class Header extends Component {
     );
   }
 }
-
-export default Header;
