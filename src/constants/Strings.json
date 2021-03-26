@@ -3,7 +3,8 @@
     "Header": {
       "contactUsButtonText": "Contact Us",
       "logoAltText": "abc Logo",
-      "letsTalkButtonText": "Let's Talk"
+      "letsTalkButtonText": "Let's Talk",
+      "letsTalkButtonIcon": "→"
     }
   }
 }

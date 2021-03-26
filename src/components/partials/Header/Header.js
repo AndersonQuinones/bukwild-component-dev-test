@@ -9,9 +9,16 @@ const activeLinkStyle = {
   color: "orange",
 };
 
+function handleContactUsButtonClick() {
+  console.log("Contact Us Button Clicked!");
+}
+
 const ContactUsButton = () => {
   return (
-    <button className="ContactUsButton text-button">
+    <button
+      className="ContactUsButton text-button"
+      onClick={handleContactUsButtonClick}
+    >
       {Strings.partials.Header.contactUsButtonText}
     </button>
   );
