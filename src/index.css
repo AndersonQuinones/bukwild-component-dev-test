@@ -1,14 +1,66 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css");
+
+/* Layout and sizing */
+
 html,
 body,
 #root {
   height: 100%;
+  margin: 0;
+  overflow: hidden;
 }
 
 body {
   background-color: teal;
+  padding-top: 1%;
 }
 
 .full-height {
   height: 100%;
+}
+
+/* Typography */
+
+body {
+  font-family: HelveticaNeue;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+.text-headline {
+  font-size: 5.25rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -2.2px;
+}
+
+.text-subhead {
+  font-size: 0.875rem;
+  line-height: 1.86;
+  letter-spacing: normal;
+}
+
+.text-callout {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.33;
+}
+
+.text-body {
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.86;
+  letter-spacing: normal;
+}
+
+.text-button {
+  font-size: 0.938rem;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
 }

@@ -1,24 +1,26 @@
-import React, { Component, Fragment } from "react";
+import React from "react";
 import Header from "../partials/Header/Header";
-import {
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-  Switch,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Page from "../partials/Page/Page";
 import Pages from "../../constants/Pages";
 
+const setBackground = (img) => {
+  const url = require(`../../assets/${img}`).default;
+
+  document.body.style.background = `url(${url}) no-repeat center center fixed`;
+  document.body.style.backgroundSize = "cover";
+};
+
 function Routes() {
   return (
-    <Fragment>
-      <Redirect exact from="/" to={Pages[0].path} />
+    <>
       {Pages.map((page) => {
         return (
           <Route
             key={page.path}
             path={page.path}
             render={() => {
+              setBackground(page.background);
               return (
                 <Page
                   headline={page.headline}
@@ -30,13 +32,13 @@ function Routes() {
           />
         );
       })}
-    </Fragment>
+    </>
   );
 }
 
-class App extends Component {
-  render() {
-    return (
+const App = () => {
+  return (
+    <div>
       <div className="container full-height">
         <Router>
           <Header />
@@ -45,8 +47,8 @@ class App extends Component {
           </Switch>
         </Router>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default App;

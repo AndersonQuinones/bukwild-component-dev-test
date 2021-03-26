@@ -1,7 +1,7 @@
 .Header {
-  background-color: rgb(109, 109, 3);
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 .HeaderLogo {
@@ -12,4 +12,16 @@
 .HeaderTopRow {
   display: flex;
   justify-content: space-between;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ContactUsButton {
+  background-color: Transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  color: inherit;
 }

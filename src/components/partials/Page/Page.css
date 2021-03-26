@@ -3,12 +3,11 @@
 }
 
 .PageContent {
-  /* Margin was used to center div vertically */
-  margin-top: 25%;
+  /* TODO - Add selectors to properly center vertically */
 }
 
 .PageHeadline {
-  background-color: lightcyan;
+  background-color: hotpink;
 }
 
 .PageSubhead {
